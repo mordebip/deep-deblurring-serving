@@ -127,3 +127,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+/.dockerenv
+/bin/
+/dev/
+/etc/
+/proc/
+/root/
+/run/
+/sbin/
+/sys/
+/usr/
