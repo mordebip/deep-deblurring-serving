@@ -3,9 +3,6 @@ LABEL maintainer="Whitman Bohorquez" description="Build tf serving based image. 
 COPY / /
 RUN apt-get update && apt-get install -y git && git reset --hard
 
-# Setup bash as default
-RUN rm /bin/sh && ln -s /bin/bash /bin/sh
-
 ENV MODEL_NAME=deblurrer MODEL_BASE_PATH=/models
 
 RUN echo '#!/bin/bash \n\n\
@@ -18,3 +15,6 @@ tensorflow_model_server \
 
 # CMD is required to run on Heroku
 CMD ["/usr/bin/tf_serving_entrypoint.sh"]
+
+# Setup bash as default
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
