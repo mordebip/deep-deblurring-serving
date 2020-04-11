@@ -138,3 +138,6 @@ dmypy.json
 /sbin/
 /sys/
 /usr/
+
+/.vscode/
+/savemodel.py
