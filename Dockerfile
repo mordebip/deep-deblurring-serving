@@ -2,6 +2,10 @@ FROM tensorflow/serving
 LABEL maintainer="Whitman Bohorquez" description="Build tf serving based image. This repo must be used as build context"
 COPY / /
 RUN apt-get update && apt-get install -y git && git reset --hard
+
+# Setup bash as default
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+
 ENV MODEL_NAME=deblurrer MODEL_BASE_PATH=/models
 
 RUN echo '#!/bin/bash \n\n\
