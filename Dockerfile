@@ -9,8 +9,7 @@ COPY / /
 RUN apt-get update \
 && apt-get install -y git \
 && apt-get install -y curl \
-&& apt-get install -y openssh-server \
-&& git reset --hard
+&& apt-get install -y openssh-server
 
 # Updates listening ports
 RUN echo '#!/bin/bash \n\n\
