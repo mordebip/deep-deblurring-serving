@@ -140,4 +140,4 @@ dmypy.json
 /usr/
 
 /.vscode/
-/savemodel.py
+/model.py
