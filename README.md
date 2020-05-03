@@ -1,4 +1,4 @@
-# deep-deblurring-serving
+# Deep Deblurring Serving
 The purpose of Deep Deblurring Serving is to store and distribute [Deep Deblurring Model](https://github.com/ElPapi42/deep-deblurring-model) architecture versions and successful training iterations.
 
 The Serving strategy consists of a [Tensorflow Serving](https://www.tensorflow.org/tfx/guide/serving) Docker Container build with this Repository as Context, bringing the model iterations with it. This Docker Container can be deployed to any Cloud Service (GCloud, Azure, AWS, Heroku), and use the [Tensorflow Serving Rest API Specification](https://www.tensorflow.org/tfx/serving/api_rest) for request predictions.
