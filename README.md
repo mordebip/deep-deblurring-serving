@@ -3,7 +3,7 @@ The porpoise of Deep Deblurring Serving is to stores and distribute [Deep Deblur
 
 The Serving strategy consist of a [Tensorflow Serving](https://www.tensorflow.org/tfx/guide/serving) Docker Container build with this Repository as Context, bringing the model iterations with it. This Docker Container can be deployed to any Cloud Service (GCloud, Azure, AWS, Heroku), and use the [Tensorflow Serving Rest API Specification](https://www.tensorflow.org/tfx/serving/api_rest) for request predictions.
 
-On the next visualization, the block name as "Model Serving" is the System Component store in this repository
+On the next visualization, the block named as "Model Serving" is the System Component stored in this repository
 
 ![Image](https://github.com/ElPapi42/deep-deblurring-serving/blob/master/SystemArchitecture.png "Arch")
 
