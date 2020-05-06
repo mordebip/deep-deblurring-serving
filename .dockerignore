@@ -10,3 +10,4 @@ SystemArchitecture.png
 model.py
 heroku.yml
 Dockerfile
+docker-compose.yml

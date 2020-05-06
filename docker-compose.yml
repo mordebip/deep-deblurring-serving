@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+    deblurring-serving:
+        environment:
+            - MODEL_NAME=deblurrer
+            - PORT=8501
+        build: .   
+        image: deblurring-serving:latest
+        ports:
+            - 8501:8501
+        networks:
+            - deep-deblurring
+        container_name: deblurring-serving
+    
+networks:
+    deep-deblurring:
+        external: true
