@@ -1,0 +1,12 @@
+.git
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+.vscode
+.gitignore
+SystemArchitecture.png
+model.py
+heroku.yml
+Dockerfile
